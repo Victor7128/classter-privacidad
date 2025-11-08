@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminación de Cuenta - Classter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 25px;
+            border-left: 4px solid #667eea;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .section h3 {
+            color: #555;
+            margin: 20px 0 10px 0;
+            font-size: 1.2em;
+        }
+        
+        .section ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .warning-box h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .contact-box {
+            background: #d1ecf1;
+            border: 2px solid #17a2b8;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .contact-box h3 {
+            color: #0c5460;
+            margin-bottom: 15px;
+        }
+        
+        .email-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .email-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .timeline {
+            background: #e3f2fd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        
+        .timeline-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .timeline-item:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            background: #667eea;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            border-top: 3px solid #667eea;
+        }
+        
+        .footer p {
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 Classter</h1>
+            <p>Sistema de Evaluación Educativa</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>📋 Solicitud de Eliminación de Cuenta</h2>
+                <p>
+                    En <strong>Classter</strong>, respetamos tu privacidad y tu derecho a controlar 
+                    tus datos personales. Si deseas eliminar tu cuenta y todos los datos asociados, 
+                    sigue los pasos que se indican a continuación.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>🔐 ¿Qué datos se eliminarán?</h2>
+                <p>Al eliminar tu cuenta, se borrarán permanentemente los siguientes datos:</p>
+                <ul>
+                    <li><strong>Información de cuenta:</strong> Nombre, correo electrónico, credenciales de acceso</li>
+                    <li><strong>Datos de perfil:</strong> Rol (Docente/Administrador), área curricular asignada</li>
+                    <li><strong>Datos académicos:</strong> Competencias creadas, capacidades, criterios de evaluación</li>
+                    <li><strong>Sesiones educativas:</strong> Todas las sesiones y productos académicos asociados</li>
+                    <li><strong>Evaluaciones:</strong> Calificaciones y registros de evaluación de estudiantes</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <h3>⚠️ IMPORTANTE: Esta acción es irreversible</h3>
+                <p>
+                    Una vez que se elimine tu cuenta, <strong>no será posible recuperar ningún dato</strong>. 
+                    Asegúrate de hacer una copia de seguridad de cualquier información importante antes de proceder.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>📝 Pasos para solicitar la eliminación</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div>
+                            <strong>Paso 1:</strong> Envía un correo electrónico a nuestro equipo de soporte 
+                            usando el botón de abajo.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div>
+                            <strong>Paso 2:</strong> Incluye en el asunto: 
+                            <em>"Solicitud de eliminación de cuenta - Classter"</em>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div>
+                            <strong>Paso 3:</strong> En el cuerpo del correo, proporciona:
+                            <ul style="margin-top: 8px;">
+                                <li>Tu nombre completo registrado en la app</li>
+                                <li>Tu correo electrónico de acceso</li>
+                                <li>Confirmación de que deseas eliminar permanentemente tu cuenta</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div>
+                            <strong>Paso 4:</strong> Recibirás una confirmación por correo electrónico 
+                            dentro de las próximas <strong>48 horas hábiles</strong>.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div>
+                            <strong>Paso 5:</strong> Tu cuenta será eliminada completamente dentro de 
+                            los siguientes <strong>30 días</strong> tras la confirmación.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>⏰ Plazos de Eliminación</h2>
+                <ul>
+                    <li><strong>Datos de cuenta personal:</strong> Eliminados en 30 días</li>
+                    <li><strong>Datos académicos y evaluaciones:</strong> Eliminados en 30 días</li>
+                    <li><strong>Copias de seguridad:</strong> Eliminadas en 90 días (por razones técnicas)</li>
+                    <li><strong>Registros de auditoría (si aplican obligaciones legales):</strong> 
+                        Conservados por el tiempo requerido por ley (máximo 5 años)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>📊 Datos que se conservan (si aplica)</h2>
+                <p>
+                    Solo conservaremos datos si estamos legalmente obligados a hacerlo, como:
+                </p>
+                <ul>
+                    <li>Registros de auditoría requeridos por regulaciones educativas</li>
+                    <li>Datos anonimizados para estadísticas (sin información personal identificable)</li>
+                </ul>
+                <p style="margin-top: 10px;">
+                    <em>En todos los casos, los datos conservados estarán completamente anonimizados 
+                    y no podrán ser asociados a tu identidad personal.</em>
+                </p>
+            </div>
+
+            <div class="contact-box">
+                <h3>📧 Contacto para eliminación de cuenta</h3>
+                <p>Para solicitar la eliminación de tu cuenta, envíanos un correo a:</p>
+                <a href="mailto:soporte.classter@gmail.com?subject=Solicitud de eliminación de cuenta - Classter&body=Nombre completo:%0D%0ACorreo electrónico registrado:%0D%0A%0D%0AConfirmo que deseo eliminar permanentemente mi cuenta de Classter y todos los datos asociados.%0D%0A%0D%0AEntiendo que esta acción es irreversible." 
+                   class="email-button">
+                    📩 Solicitar Eliminación de Cuenta
+                </a>
+                <p style="margin-top: 20px; font-size: 0.9em; color: #666;">
+                    Email: <strong>soporte.classter@gmail.com</strong>
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>❓ Preguntas Frecuentes</h2>
+                
+                <h3>¿Puedo recuperar mi cuenta después de eliminarla?</h3>
+                <p>No. La eliminación es permanente e irreversible. Una vez completado el proceso, 
+                todos tus datos serán eliminados y no podrán recuperarse.</p>
+                
+                <h3>¿Cuánto tiempo tarda el proceso?</h3>
+                <p>El proceso completo puede tardar hasta 30 días después de tu confirmación. 
+                Recibirás una notificación cuando tu cuenta haya sido eliminada por completo.</p>
+                
+                <h3>¿Qué pasa si cambio de opinión?</h3>
+                <p>Puedes cancelar tu solicitud de eliminación enviando otro correo dentro de 
+                las primeras 48 horas después de hacer la solicitud inicial.</p>
+                
+                <h3>¿Mis estudiantes perderán sus evaluaciones?</h3>
+                <p>Si eres docente y eliminas tu cuenta, las evaluaciones de tus estudiantes 
+                se conservarán en el sistema del administrador de tu institución educativa. 
+                Sin embargo, perderás el acceso a ellas.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Classter</strong> - Sistema de Evaluación Educativa</p>
+            <p>Desarrollado por Victor7128</p>
+            <p style="margin-top: 15px; font-size: 0.9em;">
+                Última actualización: 8 de noviembre de 2024
+            </p>
+            <p style="margin-top: 10px; font-size: 0.85em;">
+                <a href="politica-privacidad-classter.html" style="color: #667eea; text-decoration: none;">
+                    📄 Ver Política de Privacidad
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
